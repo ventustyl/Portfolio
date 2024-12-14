@@ -1,0 +1,7 @@
+.avalanche {
+  background: transparent;
+}
+
+.avalanche canvas {
+  background-color: transparent !important;
+}

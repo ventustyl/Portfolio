@@ -1,0 +1,199 @@
+.container,
+.containerdark {
+  height: 100vh;
+  width: 100vw;
+  transition: 1s ease;
+}
+
+.container {
+  background: white;
+  color: black;
+}
+
+.containerdark {
+  background: black;
+  color: white;
+}
+
+.text {
+  font-weight: 100;
+}
+
+.h2,
+.h2Dark,
+.h3 {
+  padding: 70px 30px 20px;
+  text-align: left;
+  font-size: 60px;
+}
+.programmation {
+  margin: 0 30px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 3fr;
+  grid-template-rows: repeat(5, 0.2fr);
+  gap: 0px;
+  width: 100%;
+  text-align: left;
+  height: 40vh;
+}
+
+.domain,
+.text {
+  font-size: 24px;
+  margin: 0;
+}
+
+.avalanche {
+  width: 500px;
+}
+
+.img {
+  margin: auto;
+  width: 400px;
+  height: 39%;
+  background: url("../../assets/img/accomapgnement-booster.png") center center
+    no-repeat;
+  background-size: contain;
+  position: fixed;
+  bottom: 2px;
+  right: 100px;
+}
+@media screen and (max-width: 1440px) {
+  .img {
+    bottom: 2px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .img {
+    margin: 0;
+    background: url("../../assets/img/accomapgnement-booster.png") center center
+      no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 50px;
+    height: 200px;
+    width: 300px;
+  }
+  .programmation {
+    display: flex;
+    margin: 0 30px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 2fr 2fr 3fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 4vw;
+  }
+  .avalanche {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 800px) {
+  .programmation {
+    display: flex;
+    margin: 0 30px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1.5fr 2fr 3fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 4vw;
+  }
+
+  .domain,
+  .text {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .img {
+    margin: 0;
+    background: url("../../assets/img/accomapgnement-booster.png") center center
+      no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+  }
+
+  .avalanche {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  .containerdark {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 20px;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .programmation {
+    margin: 15px 10px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 0.5fr 0.5fr);
+    gap: 6px;
+    height: 77vh;
+    width: 90%;
+    font-size: 4vw;
+    text-align: left;
+  }
+
+  .h2,
+  .h2Dark {
+    padding: 0;
+    margin: 0 10px 10px;
+    text-align: left;
+    font-size: var(--font-title-mobile);
+    width: 100%;
+  }
+
+  .text {
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .avalanche {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .domain .text {
+    font-size: 10px;
+  }
+  .avalanche {
+    display: none;
+  }
+
+  .img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container,
+  .containerdark {
+    margin-top: 50px;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+
+  .text {
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+  .programmation p {
+    height: auto;
+  }
+}

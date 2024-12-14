@@ -1,0 +1,290 @@
+@import "../../index.css";
+
+@font-face {
+  font-family: "Neon Glow";
+  src: url("../../assets/font/NeonGlow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container,
+.containerdark {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  transition: 1s ease;
+}
+
+.container {
+  background: white;
+  color: black;
+}
+
+.containerdark {
+  background: black;
+  color: white;
+}
+
+.textTitle {
+  height: 100%;
+  width: 70%;
+  font-size: 30px;
+}
+
+h1 {
+  margin: 70px 30px 20px;
+  text-align: left;
+  font-size: 80px;
+}
+
+p {
+  font-size: 18px;
+  text-align: left;
+  margin: 30px;
+  line-height: 2.4vh;
+}
+
+.img {
+  margin: auto;
+  width: 30%;
+  height: 100%;
+  background: url("../../assets/img/audit-seo.webp") center center no-repeat;
+  background-size: 60%;
+  animation: float 9s ease-in-out infinite;
+}
+
+.message,
+.messageDark {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  height: 60px;
+}
+
+.message {
+  color: black;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.messageDark {
+  color: white;
+  transition: 1s ease;
+}
+
+.message div,
+.messageDark div {
+  display: flex;
+  white-space: nowrap;
+  animation: defilement 15s linear infinite;
+}
+
+.message span,
+.messageDark span {
+  display: inline-block;
+  font-size: 4rem;
+  padding-right: 1rem; /* Espace entre les éléments */
+  font-weight: 100;
+  font-family: "Neon Glow";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+@keyframes defilement {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.effect {
+  display: inline-block;
+  animation: wiggle 3s linear infinite;
+  animation-delay: 4s;
+  transform-origin: 50% 5em;
+  position: relative;
+  padding: 5px;
+  color: white;
+  background: black;
+  transition: 1s ease;
+}
+
+.effectdark {
+  display: inline-block;
+  animation: wiggle 3s linear infinite;
+  transform-origin: 50% 5em;
+  position: relative;
+  padding: 5px;
+  color: black;
+  background: white;
+  transition: 1s ease;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-20px);
+  }
+  66% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  h1 {
+    margin: 80px 30px 20px;
+
+    font-size: 60px;
+  }
+  p {
+    font-size: 16px;
+    margin: 4vh 30px 4vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    margin: 80px 30px 20px;
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 3vh 30px 4vh;
+    line-height: 3vh;
+  }
+
+  .img {
+    background-size: 80%;
+  }
+
+  .message span {
+    font-size: 4rem;
+    padding-right: 0.5rem; /* Espace entre les éléments */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .textTitle {
+    height: 100%;
+    width: 100%;
+  }
+
+  .img {
+    display: none;
+  }
+  .message,
+  .messageDark {
+    bottom: 70px;
+    height: max-content;
+  }
+
+  .message span,
+  .messageDark span {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 17px;
+    margin: 3vh 30px 4vh;
+    line-height: 2.5vh;
+  }
+  .message,
+  .messageDark {
+    bottom: 20px;
+    height: max-content;
+  }
+
+  .message span,
+  .messageDark span {
+    font-size: 4rem;
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(10px, 10px);
+    }
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .textTitle {
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  p {
+    margin: 3vh 10px 4vh;
+    font-size: 14px;
+    line-height: 2.5vh;
+  }
+  .message,
+  .messageDark {
+    bottom: 10px;
+  }
+  .message span,
+  .messageDark span {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p:nth-child(2) {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+/* Styles généraux pour le footer */
+.footer,
+.footerdark {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 12px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Espace horizontal par défaut */
+  cursor: default;
+}
+
+/* Variantes de couleur pour chaque thème */
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footerdark {
+  background-color: white;
+  color: black;
+}
+
+/* Media query pour les écrans plus petits */
+@media screen and (max-width: 480px) {
+  .footer,
+  .footerdark {
+    padding: 10px;
+    font-size: 10px; /* Ajuste la taille de la police pour les petits écrans */
+  }
+}

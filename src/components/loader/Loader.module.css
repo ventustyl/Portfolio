@@ -1,0 +1,17 @@
+/* Loader.css */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background-color: #111111; /* Couleur de fond pour l'animation de chargement */
+    z-index: 10000; /* Assurez-vous que le loader est au-dessus de tout le reste */
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  body.loading {
+    overflow: hidden;
+  }
+  

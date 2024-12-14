@@ -1,0 +1,390 @@
+@import "../../index.css";
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  color: black;
+  transition: 1s ease;
+  display: flex;
+}
+
+.containerdark {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  transition: 1s ease;
+  display: flex;
+}
+
+.containerFolio {
+  height: 100vh;
+  width: 25%;
+  background: white;
+  color: black;
+  transition: 1s ease;
+}
+
+.containerFolioDark {
+  height: 100vh;
+  width: 25%;
+  background: black;
+  transition: 1s ease;
+}
+
+.h2,
+.h2Dark,
+.h3 {
+  padding: 60px 30px 20px;
+  text-align: left;
+  font-size: 60px;
+}
+
+.h3 {
+  color: transparent;
+  visibility: hidden;
+}
+
+.h2 {
+  background-color: white;
+  color: black;
+  transition: 1s ease;
+}
+.h2Dark {
+  background-color: black;
+  color: white;
+  transition: 1s ease;
+}
+
+.imgMe {
+  margin: 50px 30px;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/img/eric-venturino.webp") top center no-repeat;
+  background-size: 65%; /* Remplace par cover si tu veux remplir le conteneur */
+  animation: float 9s ease-in-out infinite;
+}
+
+.textTitle {
+  height: 100%;
+  width: 70%;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.project {
+  width: 100%; /* Largeur maximale */
+  height: 90%; /* Ajuste la hauteur globale */
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+  gap: 20px; /* Espacement entre les éléments */
+  padding: 3vh;
+  margin: 0 auto; /* Centre horizontalement le conteneur */
+  box-sizing: border-box;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+}
+
+.cardImg {
+  width: 100%;
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.imageContent {
+  position: relative;
+  padding: 20px;
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.name {
+  font-size: 1.4rem;
+  color: black;
+  text-align: center;
+}
+
+.nameDark {
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: black;
+  margin: 10px auto 0;
+  padding: 10px;
+}
+
+.descriptionDark {
+  font-size: 0.8rem;
+  color: white;
+  margin: 10px auto 0;
+  padding: 10px;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 60%;
+  transition: 0.5s all ease-in-out;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: 0.5s all ease-in-out;
+}
+
+.buttonDark {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 60%;
+  transition: 0.5s all ease-in-out;
+}
+
+.buttonDark:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s all ease-in-out;
+}
+
+.slideContent {
+  height: 100%;
+}
+
+.projectDiv,
+.projectDivDark {
+  width: 45%;
+  height: 33%;
+}
+
+.paragraph {
+  font-size: 16px;
+  flex: 1 1 calc(25% - 20px); /* Taille adaptative des éléments */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.paragraphDark {
+  font-size: 16px;
+  flex: 1 1 calc(25% - 20px); /* Taille adaptative des éléments */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-20px);
+  }
+  66% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .h2,
+  .h2Dark {
+    margin: 0 0 50px;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .h2,
+  .h2Dark {
+    margin: 0 0 50px;
+    font-size: 60px;
+  }
+
+  .imgMe {
+    background-size: 90%; /* Remplace par cover si tu veux remplir le conteneur */
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .containerdark,
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .containerFolio,
+  .containerFolioDark {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .h2,
+  .h2Dark {
+    padding: 6 0px 30px 10px;
+    text-align: left;
+    font-size: 80px;
+    margin: 0;
+  }
+
+  .h3,
+  .imgMe {
+    display: none;
+  }
+
+  .project {
+    width: 100%; /* Largeur maximale */
+    height: 90%; /* Ajuste la hauteur globale */
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 3vh;
+    margin: 0 auto; /* Centre horizontalement le conteneur */
+    box-sizing: border-box;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+  }
+  .textTitle {
+    margin: auto;
+    width: 90%;
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .containerdark,
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .containerFolio,
+  .containerFolioDark {
+    width: 100%;
+    height: 70%;
+  }
+
+  .textTitle {
+    height: 80vh;
+    width: 100%;
+    margin-top: 0;
+  }
+  .h2,
+  .h2Dark {
+    margin: 10px 0 10px;
+    text-align: left;
+    font-size: 35px;
+  }
+
+  .imgMe,
+  .h3 {
+    display: none;
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(10px, 10px);
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container,
+  .containerdark {
+    flex-direction: column;
+  }
+
+  .textTitle {
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .project {
+    height: 100%; /* Ajuste la hauteur globale */
+  }
+
+  .h2,
+  .h2Dark {
+    padding: 60px 10px 30px;
+    margin: 0;
+    text-align: left;
+    font-size: var(--font-title-mobile);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p:nth-child(2) {
+    display: none;
+  }
+
+  .message,
+  .messageDark {
+    bottom: 70px;
+  }
+
+  .message span,
+  .messageDark span {
+    font-size: 3rem;
+    padding-right: 0.6rem; /* Espace entre les éléments */
+  }
+}

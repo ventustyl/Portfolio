@@ -1,0 +1,50 @@
+.slide-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    z-index: 10;
+  }
+  
+  .slide {
+    height: 100vh; /* Utilise 100vh complet pour chaque diapositive */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    opacity: 0; /* Caché par défaut */
+    transform: scale(0.95); /* Légère réduction initiale */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 10;
+  }
+  
+  .slide.active {
+    opacity: 1; /* Affiche la section active */
+    animation: bounce 0.8s ease forwards; /* Effet de rebond */
+  }
+  
+  /* Animation de rebond */
+  @keyframes bounce {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide {
+      transform: scale(1); /* Légère réduction initiale */
+    }
+  }
+  

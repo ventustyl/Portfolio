@@ -1,0 +1,16 @@
+a:nth-child(3) {
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(209, 15, 15, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 10px 10px rgba(224, 15, 15, 0.452);
+  }
+  100% {
+    box-shadow: 0 0 15px 10px transparent;
+  }
+}
