@@ -76,16 +76,16 @@ Les fichiers de production se trouveront dans le dossier  `dist`.
 
 
 `├── public/              # Fichiers statiques
-├── src/
-│   ├── assets/          # Images et ressources
-│   ├── components/      # Composants réutilisables
-│   ├── pages/           # Pages principales
-│   ├── styles/          # Fichiers CSS/SCSS
-│   ├── App.jsx          # Point d'entrée de l'application
-│   ├── main.jsx         # Initialisation de React et Vite
-├── .env                 # Variables d'environnement
-├── package.json         # Dépendances et scripts
-└── README.md            # Documentation`
+ ├── src/
+ │   ├── assets/          # Images et ressources
+ │   ├── components/      # Composants réutilisables
+ │   ├── pages/           # Pages principales
+ │   ├── styles/          # Fichiers CSS/SCSS
+ │   ├── App.jsx          # Point d'entrée de l'application
+ │   ├── main.jsx         # Initialisation de React et Vite
+ ├── .env                 # Variables d'environnement
+ ├── package.json         # Dépendances et scripts
+ └── README.md            # Documentation`
 
 
 ## **Contribuer**
