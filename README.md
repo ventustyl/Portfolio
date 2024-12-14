@@ -72,13 +72,10 @@ Pour générer une version prête pour la production :
 
 Les fichiers de production se trouveront dans le dossier  `dist`.
 
-----------
-
 ## **Structure du projet**
 
 
-
-├── public/              # Fichiers statiques
+`├── public/              # Fichiers statiques
 ├── src/
 │   ├── assets/          # Images et ressources
 │   ├── components/      # Composants réutilisables
@@ -88,7 +85,7 @@ Les fichiers de production se trouveront dans le dossier  `dist`.
 │   ├── main.jsx         # Initialisation de React et Vite
 ├── .env                 # Variables d'environnement
 ├── package.json         # Dépendances et scripts
-└── README.md            # Documentation` 
+└── README.md            # Documentation`
 
 
 ## **Contribuer**
