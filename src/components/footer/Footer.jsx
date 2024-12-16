@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <footer className={isDarkMode ? style.footer : style.footerdark}>
-        <p>Réalisé avec ❤️ par moi même</p> <p>Version 1.04</p>
+        <p>Réalisé avec ❤️ par moi même</p> <p>Version 1.05</p>
       </footer>
     </>
   );

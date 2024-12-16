@@ -58,7 +58,11 @@ function App() {
   return (
     <div className={isDarkMode ? "dark-mode" : "light-mode"}>
       {showOrientationError ? (
-        <div className="orientation-error">
+              <div
+              className={
+                isDarkMode ? "orientation-error-dark" : "orientation-error"
+              }
+            >
           <p>
             Ce site ne fonctionne qu'en mode portrait pour les écrans de moins
             plus de 1024px de large.
