@@ -387,4 +387,7 @@
     font-size: 3rem;
     padding-right: 0.6rem; /* Espace entre les éléments */
   }
+  .project {
+    width: 90%;
+  }
 }

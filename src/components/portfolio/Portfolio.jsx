@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import projet1 from "../../../public/projet1.webp";
 import projet2 from "../../../public/react.webp";
-
 import prochainement from "../../../public/prochainement.webp";
 
 export default function Project() {
@@ -92,20 +91,32 @@ export default function Project() {
                   />
                 </a>
               </div>
-              {[...Array(5)].map((_, index) => (
+
+              <div
+                className={`${
+                  isDarkMode ? style.projectDiv : style.projectDivDark
+                }`}
+              >
+                <a href="https://framework-puce.vercel.app/" target="blank">
+                  <img
+                    className={style.img}
+                    src={projet2}
+                    alt="Framework React"
+                  />
+                </a>
+              </div>
+              {[...Array(4)].map((_, index) => (
                 <div
                   key={index}
                   className={`${
                     isDarkMode ? style.projectDiv : style.projectDivDark
                   }`}
                 >
-                  <a href="/markdown/" target="blank">
-                    <img
-                      className={style.img}
-                      src={prochainement}
-                      alt="Markdown converter"
-                    />
-                  </a>
+                  <img
+                    className={style.img}
+                    src={prochainement}
+                    alt="Prochainemen"
+                  />
                 </div>
               ))}
             </div>
