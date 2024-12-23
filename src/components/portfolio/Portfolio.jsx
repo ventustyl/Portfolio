@@ -7,6 +7,8 @@ import style from "./Portfolio.module.css";
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import projet1 from "../../../public/projet1.webp";
+import projet2 from "../../../public/react.webp";
+
 import prochainement from "../../../public/prochainement.webp";
 
 export default function Project() {
@@ -37,10 +39,11 @@ export default function Project() {
       link: "/markdown/",
     },
     {
-      img: prochainement,
-      alt: "Project 2 [en cours]",
+      img: projet2,
+      alt: "React project",
       description: "Prochainement en cours de construction",
-      techno: "Prochainement",
+      techno: "Next 15.1 + GSAP",
+      link: "https://framework-puce.vercel.app/",
     },
     {
       img: prochainement,
