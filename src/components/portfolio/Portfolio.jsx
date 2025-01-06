@@ -40,7 +40,7 @@ export default function Project() {
     {
       img: projet2,
       alt: "React project",
-      description: "Prochainement en cours de construction",
+      description: "Présentation de react 19 pour la sortie",
       techno: "Next 15.1 + GSAP",
       link: "https://framework-puce.vercel.app/",
     },
