@@ -27,44 +27,30 @@ function App() {
       const isLandscape = innerWidth > innerHeight - 66;
       const isTabletOrSmaller = innerWidth <= 1024;
 
-      // Show error only if the device is in landscape mode and width matches criteria
       setShowOrientationError(isLandscape && isTabletOrSmaller);
     };
 
-    // Add event listener
     window.addEventListener("resize", handleOrientationChange);
-
-    // Trigger check on mount
-    handleOrientationChange();
-
-    // Cleanup event listener
-    return () => {
-      window.removeEventListener("resize", handleOrientationChange);
-    };
-
-    // Check initial orientation and screen size
-    handleOrientationChange();
-
     window.addEventListener("orientationchange", handleOrientationChange);
-    window.addEventListener("resize", handleOrientationChange);
 
-    // Cleanup event listeners on unmount
+    handleOrientationChange();
+
     return () => {
-      window.removeEventListener("orientationchange", handleOrientationChange);
       window.removeEventListener("resize", handleOrientationChange);
+      window.removeEventListener("orientationchange", handleOrientationChange);
     };
   }, []);
 
   return (
     <div className={isDarkMode ? "dark-mode" : "light-mode"}>
       {showOrientationError ? (
-              <div
-              className={
-                isDarkMode ? "orientation-error-dark" : "orientation-error"
-              }
-            >
-          <p>
-            Ce site ne fonctionne qu'en mode portrait pour les écrans de moins
+        <div
+          className={
+            isDarkMode ? "orientation-error-dark" : "orientation-error"
+          }
+        >
+      <p style={{ lineHeight: "2rem", textAlign:"center"}}>
+            Ce site ne fonctionne qu&apos;en mode portrait pour les écrans de moins
             plus de 1024px de large.
           </p>
           <p> Veuillez tourner votre appareil.</p>
@@ -77,7 +63,7 @@ function App() {
           <SlideContainer>
             <Hero />
             <Portfolio />
-             <Skills /> 
+            <Skills />
           </SlideContainer>
         </>
       )}

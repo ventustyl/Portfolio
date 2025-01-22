@@ -9,10 +9,6 @@
   --border-color-dark: rgb(0, 0, 0);
 }
 
-@font-face {
-  font-family: ClashDisplay;
-  src: url("../../assets/font/carbono_pw.ttf");
-}
 
 * {
   margin: 0;
