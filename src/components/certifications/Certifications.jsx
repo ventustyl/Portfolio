@@ -1,3 +1,4 @@
+import Boxes from "../Box/Box";
 import style from "./Certifications.module.css";
 import { useSelector } from "react-redux";
 
@@ -11,7 +12,7 @@ export default function Certifications() {
       <div className={style.titleContainer}>
       <h2 className={isDarkMode ? style.h2 : style.h2Dark}>Certifications</h2>
       </div>
-
+<Boxes />
      
     </div>
   );

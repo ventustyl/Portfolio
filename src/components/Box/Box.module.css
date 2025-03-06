@@ -1,0 +1,66 @@
+/* Global reset et box-sizing (peut aussi être placé dans un fichier global) */
+* {
+    box-sizing: border-box;
+  }
+   
+  /* Conteneur flex */
+  .content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  /* Style commun aux box */
+  .box {
+    position: relative;
+    margin: 10px;
+    height: 180px;
+    border-radius: 3px;
+    border: solid 1px black;
+    transition: transform .6s cubic-bezier(0.4, 0, 0.2, 1), z-index .6s ease;
+  }
+  
+  .box:hover {
+    transform: scale(2);
+    z-index: 10;
+  }
+  
+  
+  /* Tailles des box (flex-basis & flex-grow) */
+  .size1 {
+    flex: 1 200px; /* petite taille */
+  }
+  
+  .size2 {
+    flex: 2 250px; /* taille moyenne */
+  }
+  
+  .size3 {
+    flex: 3 300px; /* taille importante */
+  }
+  
+  .size4 {
+    flex: 4 350px; /* grande taille */
+  }
+  
+  /* Couleurs des box */
+  .color1 {
+    background: #2ecc71; /* Vert */
+  }
+  
+  .color2 {
+    background: #3498db; /* Bleu */
+  }
+  
+  .color3 {
+    background: #f1c40f; /* Jaune */
+  }
+  
+  .color4 {
+    background: #e74c3c; /* Rouge */
+  }
+  

@@ -50,9 +50,9 @@ function App() {
             isDarkMode ? "orientation-error-dark" : "orientation-error"
           }
         >
-      <p style={{ lineHeight: "2rem", textAlign:"center"}}>
-            Ce site ne fonctionne qu&apos;en mode portrait pour les écrans de moins
-            plus de 1024px de large.
+          <p style={{ lineHeight: "2rem", textAlign: "center" }}>
+            Ce site ne fonctionne qu&apos;en mode portrait pour les écrans de
+            moins plus de 1024px de large.
           </p>
           <p> Veuillez tourner votre appareil.</p>
         </div>
@@ -61,12 +61,21 @@ function App() {
       ) : (
         <>
           <Navbar />
-          <SlideContainer>
-            <Hero />
-            <Portfolio />
-            <Certifications />
-            <Skills />
-          </SlideContainer>
+
+          {innerWidth >= 1366 ? (
+            <SlideContainer>
+              <Hero />
+              <Portfolio />
+              <Certifications />
+              <Skills />
+            </SlideContainer>
+          ) : (
+            <SlideContainer>
+              <Hero />
+              <Portfolio />
+              <Skills />
+            </SlideContainer>
+          )}
         </>
       )}
     </div>
