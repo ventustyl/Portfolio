@@ -7,6 +7,7 @@ import SlideContainer from "./components/slidercontainer/SliderContainer";
 import Skills from "./components/skills/Skills";
 import Hero from "./components/hero/Hero";
 import Portfolio from "./components/portfolio/Portfolio";
+import Certifications from "./components/certifications/Certifications";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -63,6 +64,7 @@ function App() {
           <SlideContainer>
             <Hero />
             <Portfolio />
+            <Certifications />
             <Skills />
           </SlideContainer>
         </>

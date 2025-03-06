@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./Hero.module.css";
 import { useSelector } from "react-redux";
 
@@ -20,8 +19,8 @@ export default function Hero() {
               l'élaboration des besoins jusqu'à la mise en ligne. J'interviens
               également en conseil stratégique et en amélioration de l'interface
               et de l'expérience utilisateur, afin d'offrir des solutions
-              optimisées et adaptées aux attentes des utilisateurs. <br />Par
-              ailleurs, mes deux années en développement Fullstack JS m’ont
+              optimisées et adaptées aux attentes des utilisateurs. <br />
+              Par ailleurs, mes deux années en développement Fullstack JS m’ont
               permis de concevoir des applications web et mobiles performantes
               et fiables.
             </p>
@@ -29,10 +28,11 @@ export default function Hero() {
             <div className={style.text2}>
               <p className={style.paragraph2}>
                 Vous cherchez un développeur passionné pour renforcer votre
-                équipe ? 
+                équipe ?
               </p>
               <p className={style.paragraph}>
-              Ce que je peux vous apporter :<br /><br/>
+                Ce que je peux vous apporter :<br />
+                <br />
                 - Compétence technique et polyvalence
                 <br />
                 - Rigueur et organisation
@@ -61,11 +61,9 @@ export default function Hero() {
       </div>
       <div className={`${isDarkMode ? style.message : style.messageDark}`}>
         <div>
-
           <span>Developpeur Web Fullstack - </span>
           <span>Creation WordPress - </span>
           <span>Integrateur web - </span>
-
 
           <span>Developpeur Web Fullstack -</span>
           <span>Creation WordPress -</span>
