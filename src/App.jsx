@@ -62,7 +62,7 @@ function App() {
         <>
           <Navbar />
 
-          {innerWidth >= 1366 ? (
+          {innerWidth >= 1800 ? (
             <SlideContainer>
               <Hero />
               <Portfolio />

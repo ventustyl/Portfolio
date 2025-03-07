@@ -25,7 +25,7 @@
   }
   
   .box:hover {
-    transform: scale(2);
+    transform: scale(3);
     z-index: 10;
   }
   
@@ -43,9 +43,7 @@
     flex: 3 300px; /* taille importante */
   }
   
-  .size4 {
-    flex: 4 350px; /* grande taille */
-  }
+
   
   /* Couleurs des box */
   .color1 {
